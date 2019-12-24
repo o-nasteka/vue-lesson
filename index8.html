@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lesson 8. Event Modification. Vue </title>
+    <title>Lesson 8/ Lesson 9. Event Modification (Keyboard). Vue </title>
     <link rel="shortcut icon" type="image/png" href="/static/favicon.png"/>
 </head>
 <body>
@@ -12,6 +12,17 @@
     <h2>
         <a href="http://google.com" target="_blank" v-on:click.prevent="">Google</a>
     </h2>
+
+    <h2 v-on:mousemove="handleMouseMove">
+        X: {{ x }} \ Y: {{ y}}
+
+        <span v-on:mousemove.stop="">Не менять</span>
+    </h2>
+
+    <hr>
+
+    <input type="text" v-on:keyup.enter.space="alertValue">
+    
 </div>
 
 

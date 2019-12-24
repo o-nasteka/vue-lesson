@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 15. V-show directive. Vue </title>
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.png"/>
+
+    <style>
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 40px;
+
+        }
+
+        .red {background: red}
+        .blue {background: blue}
+        .green {background: green}
+        .gray {background: gray}
+
+    </style>
+</head>
+<body>
+
+
+<div id="app">
+
+    <h2 v-if="type === 'a'">A</h2>
+    <h2 v-else-if="type === 'b'">B</h2>
+    <h2 v-else-if="type === 'c'">C</h2>
+    <h2 v-else>not match</h2>
+
+    <hr>
+
+    <input type="text" v-model="type">
+
+    <hr>
+
+    <template v-if="isVisible">
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, vitae!</p>
+    </template>
+
+    <template v-else>
+        <h2 style="color: red">Title</h2>
+        <p style="color: blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, molestias.</p>
+    </template>
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/les15.js"></script>
+</body>
+</html>

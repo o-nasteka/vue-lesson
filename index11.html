@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 11. Model for working with forms. Vue </title>
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.png"/>
+</head>
+<body>
+
+
+<div id="app">
+<!--    <input type="text" @input="inputValue = $event.target.value"> // two way binding-->
+    <input type="text" v-model.lazy="inputValue">
+
+    <h2> {{ inputValue }}</h2>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/les11.js"></script>
+</body>
+</html>
