@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 6. Events. Vue </title>
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.png"/>
+</head>
+<body>
+
+
+<div id="app">
+  <h2>Счетчик = {{ counter }}</h2>
+    <button v-on:click="riseCounter">Увеличить</button>
+    <button v-on:click="decreaseCounter">Уменьшить</button>
+
+    <hr>
+
+    <h2 v-on:mouseover="onHover">Счетчик = {{ counter2 }}</h2>
+    <button v-on:click="riseCounter">Увеличить</button>
+
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/les6.js"></script>
+</body>
+</html>

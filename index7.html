@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 7. Send params to method. Vue </title>
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.png"/>
+</head>
+<body>
+
+
+<div id="app">
+  <h2>{{ title }} = {{ counter }}</h2>
+    <button v-on:click="riseCounter(5, 'Counter 5', $event)">Увеличить на 5</button>
+    <button v-on:click="riseCounter(10, 'Counter 10', $event)">Увеличить на 10</button>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/les7.js"></script>
+</body>
+</html>

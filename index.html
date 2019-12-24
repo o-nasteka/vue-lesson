@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue test</title>
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.png"/>
+</head>
+<body>
+
+
+    <div id="app">
+        <p>Hello {{ name }}</p>
+        <p>Sum: {{ 10 + 15 }}</p>
+        <p>Number: {{ number }}</p>
+        <p>Methos: {{ sayHello() }}</p>
+        <p>If statement {{ isOk ? 'is ok' : 'false' }} </p>
+        <p>Functions: {{ string.split('').reverse().join('') }}</p>
+
+        <a target="_blank"  v-bind:href="url">{{ url }}</a>
+
+        <h2 v-html="link"></h2>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
