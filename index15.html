@@ -28,27 +28,15 @@
 
 <div id="app">
 
-    <h2 v-if="type === 'a'">A</h2>
-    <h2 v-else-if="type === 'b'">B</h2>
-    <h2 v-else-if="type === 'c'">C</h2>
-    <h2 v-else>not match</h2>
-
+   <h1 v-if="isVisible">Visible</h1>
+    <h2 v-else>Not visible</h2>
     <hr>
 
-    <input type="text" v-model="type">
-
+    <h1 v-show="isVisible">Visible</h1>
+    <h2 v-show="!isVisible">Not visible</h2>
     <hr>
 
-    <template v-if="isVisible">
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, vitae!</p>
-    </template>
-
-    <template v-else>
-        <h2 style="color: red">Title</h2>
-        <p style="color: blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, molestias.</p>
-    </template>
-
+    <button @click="isVisible = !isVisible">Toggle</button>
 
 </div>
 
