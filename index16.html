@@ -13,9 +13,21 @@
 <div id="app">
 
   <ul>
-      <li v-for="(person, index) in peoples">{{ index + 1}}.{{ person.name }} - <strong>{{ person.age}}</strong></li>
-
+<!--  in peoples   <li v-for="(person, index) in peoples">{{ index + 1}}.{{ person.name }} - <strong>{{ person.age}}</strong></li>-->
+  <!-- of peoples  -->    <li v-for="(person, index) of peoples">{{ index + 1}}.{{ person.name }} - <strong>{{ person.age}}</strong></li>
   </ul>
+
+    <hr>
+
+    <ol>
+        <li v-for="num of 4">{{ num }}</li>
+    </ol>
+
+    <hr>
+
+    <ul>
+       <li v-for="(value, key, index) in person"><em>{{ index + 1 }}</em>.<strong>{{ key }}</strong> - {{ value }}</li>
+    </ul>
 
 </div>
 
