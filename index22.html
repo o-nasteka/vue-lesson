@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lesson 21. Access toTemplate property. Vue </title>
+    <title>Lesson 22. Life cycle. Vue </title>
     <link rel="shortcut icon" type="image/png" href="/static/favicon.png"/>
 
 </head>
@@ -10,11 +10,15 @@
 
 
 <div id="app">
+    <h2>{{ title }}</h2>
 
+    <button @click="title = 'Changed title'">Update title</button>
+
+    <button @click="doDestroy">Destroy</button>
 </div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="js/les21.js"></script>
+<script src="js/les22.js"></script>
 </body>
 </html>

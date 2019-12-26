@@ -1,6 +1,6 @@
-var vue1 = new Vue({
+var vue = new Vue({
 
-    el: '#app',
+    // el: '#app',
     data: {
         title: 'Hello Vue!'
     },
@@ -12,7 +12,10 @@ var vue1 = new Vue({
     },
     watch: {
 
-    }
-
+    },
+    template: '<div><h1>{{ title }}</h1><p>Pragraph</p></div>'
 });
+
+vue.$mount('#app')
+
 
