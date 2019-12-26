@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 18. Track changes with watch. Vue </title>
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.png"/>
+
+</head>
+<body>
+
+
+<div id="app">
+
+    <h2>Counter {{ counter }} \ {{ counter2 }} </h2>
+    <h3>Result: {{ result() }}</h3>
+    <h3>Computed result: {{ computedResult }}</h3>
+
+    <button @click="add">Add</button>
+    <button @click="sub">Subtract</button>
+
+    <button @click="counter2++">Add counter2</button>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/les18.js"></script>
+</body>
+</html>
